@@ -1,4 +1,4 @@
-<h3>Edit Post</h3>
+<h4>Edit Post</h4>
 <form method="post" action="<?= BASE_URL; ?>/admin/update/<?= $id; ?>">
   <?php include 'partials/_fields.tmpl.php'; ?>
   <input type="submit" class="btn--blue" value="Update" />

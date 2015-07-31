@@ -10,7 +10,7 @@
   <body class="grd">
     <header class="grd-row py1">
       <div class="grd-row-col-6">
-        <h1>My blog</h1>
+        <h2>My blog</h2>
       </div>
     </header>
     <section class="grd-row">
