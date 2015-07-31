@@ -1,4 +1,4 @@
-<form method="post" action="<?= BASE_URL; ?>/single/update/<?= $id; ?>">
+<form method="post" action="<?= BASE_URL; ?>/admin/update/<?= $id; ?>">
   <h4>Create a new post</h4>
   <table>
     <tr>
@@ -17,6 +17,12 @@
     <p><em><?php echo $status; ?></em></p>
   <?php endif; ?>
 </form>
-<form action="<?= BASE_URL; ?>/single/delete/<?= $id; ?>" method="post">
-  <input type="submit" name="delete" id="delete" value="Delete" />
+<form action="<?= BASE_URL; ?>/admin/delete/<?= $id; ?>" method="post">
+  <table>
+    <tr>
+      <td>
+        <input type="submit" name="delete" id="delete" value="Delete" />
+      </td>
+    </tr>
+  </table>
 </form>
