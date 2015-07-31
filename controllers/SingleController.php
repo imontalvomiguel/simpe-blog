@@ -53,4 +53,11 @@ class SingleController {
 
   }
 
+  public function deleteAction($id)
+  {
+    $db = new Blog\DB\Database();
+    $db->query('DELETE FROM posts WHERE id = :id', [':id' => $id]);
+    exit('Post was deleted');
+  }
+
 }

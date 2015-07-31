@@ -17,3 +17,6 @@
     <p><em><?php echo $status; ?></em></p>
   <?php endif; ?>
 </form>
+<form action="<?= BASE_URL; ?>/single/delete/<?= $id; ?>" method="post">
+  <input type="submit" name="delete" id="delete" value="Delete" />
+</form>
