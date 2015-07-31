@@ -30,7 +30,7 @@ class AdminController {
   public function editAction($id)
   {
     $db = new Blog\DB\Database();
-    $post = $db->findId( intval($id), 'posts');
+    $post = $db->find( 'id', intval($id), 'posts' );
     if ($post)
     {
       return $response = new View( 'single-edit', $post);
