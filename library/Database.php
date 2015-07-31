@@ -43,9 +43,9 @@ class Database {
        * Prepared Statements
        */
       $conn = $this->getConn();
-      $results = $conn->prepare($query);
-      $results->execute($bindings);
-      return $results;
+      $stmt = $conn->prepare($query);
+      $stmt->execute($bindings);
+      return $stmt;
     } catch(\Exception $e) {
       echo $e->getMessage();
       die;
