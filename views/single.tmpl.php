@@ -1,5 +1,5 @@
 <article>
-  <h2><?= $post['title']; ?></h2>
-  <p><?= $post['body']; ?></p>
+  <h2><?= htmlspecialchars( $post['title'] ); ?></h2>
+  <p><?= htmlspecialchars( $post['body'] ); ?></p>
 </article>
-<a href="<?= BASE_URL; ?>/single/edit/<?= $post['id'] ?>"><small>Edit</small></a> | <a href="#"><small>Delete</small></a>
+<a href="<?= BASE_URL; ?>/single/edit/<?= $post['id'] ?>"><small>Edit</small></a>
