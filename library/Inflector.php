@@ -18,4 +18,10 @@ class Inflector {
     return lcfirst(static::camel($value));
   }
 
+  public static function redirect($location)
+  {
+    header("Location: $location");
+    exit;
+  }
+
 }
