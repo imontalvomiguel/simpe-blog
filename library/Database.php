@@ -52,10 +52,10 @@ class Database {
     }
   }
 
-  function findId($id, $table)
+  function find($key, $value, $table)
   {
     $conn = $this->getConn();
-    $query = $this->query("SELECT * FROM $table WHERE id = :id LIMIT 1", [':id' => $id], $conn);
+    $query = $this->query("SELECT * FROM $table WHERE $key = :val LIMIT 1", [':val' => $value]);
     return $query->fetch(\PDO::FETCH_ASSOC);
   }
 
